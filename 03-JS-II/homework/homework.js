@@ -197,10 +197,9 @@ function tablaDelSeis(){
   //Escribe tu código aquí
   var temp = [];   
   for (let index = 0; index < 11; index++) {
-    var resultado = index * 6;
-    temp.add(resultado);
+    temp.push(index * 6);
   }
-  return temp; // retorna temp o que retorna
+  return temp;
 }
 
 function tieneTresDigitos(numero){
