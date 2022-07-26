@@ -82,6 +82,12 @@ function arrayContiene(array, elemento) {
   // Comprueba si el elemento existe dentro de "array"
   // Devuelve "true" si está, o "false" si no está
   // Tu código:
+  for (let i = 0; i < array.length; i++) {
+    var r;
+    if (array[i] === elemento) {
+      return true;
+    }
+  }
   return false;
 }
 
@@ -90,6 +96,13 @@ function agregarNumeros(numeros) {
   // "numeros" debe ser un arreglo de enteros (int/integers)
   // Suma todos los enteros y devuelve el valor
   // Tu código:
+  var resultado = 0;
+
+  for (let i = 0; i < numeros.length; i++) {
+    resultado += numeros[i];
+  }
+
+  return resultado;
 }
 
 
@@ -97,6 +110,12 @@ function promedioResultadosTest(resultadosTest) {
   // "resultadosTest" debe ser una matriz de enteros (int/integers)
   // Itera (en un bucle) los elementos del array, calcula y devuelve el promedio de puntajes
   // Tu código:
+  var resultado = 0;
+
+  for (let i = 0; i < resultadosTest.length; i++) {
+    resultado += resultadosTest[i];
+  }
+  return resultado / resultadosTest.length;
 }
 
 
@@ -104,12 +123,18 @@ function numeroMasGrande(numeros) {
   // "numeros" debe ser una matriz de enteros (int/integers)
   // Devuelve el número más grande
   // Tu código:
+  for (let i = 0; i < numeros.length; i++) {
+    const element = numeros[i];
+    if (element) {
+      var actual = numeros[i];
+    }
+  }
 }
 
 
 function multiplicarArgumentos() {
   // Usa la palabra clave `arguments` para multiplicar todos los argumentos y devolver el producto
-  // Si no se pasan argumentos devuelve 0. Si se pasa un argumento, simplemente devuélvelo
+  // Si no se pasan argumentos devuelve 0. Si se pasa un argumento, simplemente devuélvelo
   // Escribe tu código aquí:
 }
 
@@ -117,7 +142,6 @@ function multiplicarArgumentos() {
 function cuentoElementos(arreglo){
   //Realiza una función que retorne la cantidad de los elementos del arreglo cuyo valor es mayor a 18.
   //Escribe tu código aquí
-
 }
 
 

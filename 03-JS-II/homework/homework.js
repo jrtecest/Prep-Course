@@ -165,15 +165,10 @@ function esPrimo(numero) {
   // Pista: un número primo solo es divisible por sí mismo y por 1
   // Pista 2: Puedes resolverlo usando un bucle `for`
   // Nota: Los números 0 y 1 NO son considerados números primos
-  var temp = numero;
-  for (var i = 2; i <= numero; i++) {
-    if(numero === 1 ||numero % i === 0){
-      return false;
-    }else if(numero ===1){
-      return false;
-    }else {
-      return true;
-    }
+  if (numero / numero === 1 && numero /1 === numero) {
+    return true;
+  }else{
+    return false;
   }
 }
 
@@ -213,8 +208,7 @@ function doWhile(numero) {
   //Implementar una función tal que vaya aumentando el valor recibido en 5 hasta un límite de 8 veces
   //Retornar el valor final.
   //Usar el bucle do ... while.
-  var contador = 0;
-  
+ 
 }
 
 
