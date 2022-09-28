@@ -123,12 +123,9 @@ function numeroMasGrande(numeros) {
   // "numeros" debe ser una matriz de enteros (int/integers)
   // Devuelve el número más grande
   // Tu código:
-  for (let i = 0; i < numeros.length; i++) {
-    const element = numeros[i];
-    if (element) {
-      var actual = numeros[i];
-    }
-  }
+  var max = 0;
+  max = Math.max(...numeros);
+  return max;
 }
 
 
@@ -136,12 +133,21 @@ function multiplicarArgumentos() {
   // Usa la palabra clave `arguments` para multiplicar todos los argumentos y devolver el producto
   // Si no se pasan argumentos devuelve 0. Si se pasa un argumento, simplemente devuélvelo
   // Escribe tu código aquí:
+  
 }
 
 
 function cuentoElementos(arreglo){
   //Realiza una función que retorne la cantidad de los elementos del arreglo cuyo valor es mayor a 18.
   //Escribe tu código aquí
+  let count = 0;
+  for (let i = 0; i < array.length; i++) {
+    const element = array[i];
+    if(element > 18){
+      count += 1;
+    }
+  } 
+  return count;
 }
 
 
